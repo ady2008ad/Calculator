@@ -1,12 +1,11 @@
 import tkinter as tk
 
-#create the main window
 root=tk.Tk()
 root.title("Simple Calculator")
 
-#run the app
 
-#Display Entry
+
+
 entry=tk.Entry(root, width=20, font=("Arial",24))
 entry.grid(row=0, column=0, columnspan=4)
 
@@ -17,7 +16,7 @@ buttons = [
     '0', '.', '=', '+'
 ]
 
-# Function to handle button clicks
+
 def button_click(symbol):
     current = entry.get()
     if symbol == '=':
@@ -31,7 +30,7 @@ def button_click(symbol):
     else:
         entry.insert(tk.END, symbol)
 
-# Add buttons to the grid
+
 row = 1
 col = 0
 for button in buttons:
